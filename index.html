@@ -149,8 +149,39 @@
 				opacity: 1;
 			}
 		}
+		.play-pause-btn {
+			border: none;
+			background-color: #FFC0CB;
+			color: white;
+			font-size: 24px;
+			padding: 20px;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		.menu {
+			border: 3px solid rgb(205, 140, 80);
+		}
+		.menu li {
+			border: 2px solid rgb(233, 133, 57);
+		}
+		.menu li:hover {
+			background-color: #07c964;
+			color: black;
+		}
+		.menu li.active {
+			background-color: rgb(47, 155, 182);
+			color: white;
+		}
+
+
 	</style>
 </head>
+	<!-- 添加控制按钮 -->
+	<div style="position:fixed; top:20px; right:20px;">
+		<button id="play-pause-btn" onclick="playPause()">&#10074;&#10074;</button>
+	</div>
+
 <body>
 	<div class="container">
 		<div class="header">
